@@ -1,12 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    height: 10000px;
     background-color: #F8FAFC;
     overflow-x: hidden;
 }
-
+/*Poppins font stylings*/
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -115,7 +117,7 @@ body{
     font-style: italic;
   }
   
-
+/*Header Section*/
 .header{
     display: flex;
     flex-direction: row;
@@ -177,6 +179,8 @@ body{
 }
 
 
+
+/*Hero section*/
 .hero{
     background-image: url(/images/hero-background.jpg);
     background-size: cover;
@@ -217,7 +221,7 @@ body{
     gap: 20px;
 }
 
-
+/* Journey Section*/
 .journey-section{
     display: flex;
     flex-direction: row;
@@ -256,7 +260,7 @@ body{
 
 
 
-
+/*Services stylings*/
 .services{
     height: 740px;
     padding: 26px 30px;
@@ -317,7 +321,7 @@ body{
 }
 
 
-
+/*Testimonial section*/
 .testimonial{
     background-color: #1C3D5A;
 }
@@ -370,7 +374,7 @@ body{
 
 
 
-
+/*Values section*/
 
 .values{
     padding: 60px 20px;
@@ -438,7 +442,7 @@ body{
 }
 
 
-
+/*Team section*/
 .team{
     background-color: #ffffff;
     display: flex;
@@ -509,7 +513,7 @@ body{
 }
 
 
-
+/*FAQ Sectiion*/
 .faqs {
     padding: 30px 64px;
     background-color: #1C3D5A;
@@ -591,7 +595,7 @@ body{
     display: block;
 }
 
-
+/*ChatBot Section*/
 .assistant-content{
     padding-bottom: 40px;
 }
@@ -677,10 +681,6 @@ body{
     overflow-wrap: break-word;
 }
 
-
-
-
-
 .ai-bubble p{
     margin-bottom: 12px;
     line-height: 1.6;
@@ -690,9 +690,6 @@ body{
 .ai-bubble p:last-child{
     margin-bottom: 0;
 }
-
-
-
 
 .user-bubble{
     border: 1px solid ;
@@ -736,7 +733,6 @@ body{
     }
 }
 
-/* Streaming text animation */
 .streaming-text {
     border-right: 2px solid #3b82f6;
     animation: blink 1s infinite;
@@ -963,4 +959,159 @@ body{
 
 .btn-send-message span:hover{
     color: #1E293B;
+}
+
+
+ /* Footer */
+ .footer {
+    background-color: #1c3d5a;
+    height: fit-content;
+    padding: 20px 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 100px;
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+}
+
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.footer-nav a {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 21px;
+    color: #0b0b09;
+    text-decoration: none;
+}
+
+
+.footer-nav a:hover {
+    color: #F5F7FA;
+    cursor: pointer;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+
+.social-icons a {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.visitor-count {
+    background-color: #1e293b;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.visitor-count-text {
+    font-size: 12px;
+    font-family: Poppins;
+    color: #f8fafc;
+    line-height: 21px;
+}
+
+
+.visitor-count-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+.visitor-count-stats {
+    white-space: nowrap;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-divider {
+    background-color: #0b0b09;
+    height: 2px;
+    width: 1280px;
+    margin: 20px 0;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+
+.footer-bottom a {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    color: #0b0b09;
+    text-decoration: underline;
+}
+
+
+.footer-bottom a:hover {
+    color: #f5f7fa;
+}
+
+
+.copyright {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 21px;
+    color: #0b0b09;
 }
