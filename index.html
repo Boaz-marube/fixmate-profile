@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://js.puter.com/v2/"></script>
     <script defer src="main.js"></script>
 </head>
 <body>
@@ -196,10 +197,11 @@
                         <img src="images/dropdown-arrow.svg" alt="Plus" class="faq-icon">
                     </div>
                     <div class="faq-answer">
-                        Yes! Every handyman undergoes 3-step verification:
-                            -ID & license checks
-                            -Skills testing (e.g., live wiring repairs)
-                            -Background reviews from previous customers.
+                        Yes! Every handyman undergoes 3-step verification: <br>
+                            -ID & license checks <br>
+                            -Skills testing (e.g., live wiring repairs) <br>
+                            -Background reviews from previous customers. <br>
+                        That ensures trustworthness and transparency in carring out their duties.
                     </div>
                 </div>
                 
@@ -209,7 +211,7 @@
                         <img src="images/dropdown-arrow.svg" alt="Plus" class="faq-icon">
                     </div>
                     <div class="faq-answer">
-                        With FixProtect, all jobs come with a 7-day warranty. If the issue recurs, we’ll send another pro—free of charge.
+                        With FixProtect, all jobs come with a 7-day warranty. If the issue recurs, we’ll send another pro—<strong>free of charge.</strong> 
                     </div>
                 </div>
                 
@@ -225,6 +227,51 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+
+
+        <section class="assistant-section">
+            <div class="assistant-content">
+                <div class="assistant-title-head">
+                    <h2 class="assistant-title">🤖 FixMate Assistant</h2>
+                    <p class="assistant-subtitle">Ask about FixMate, our story, our services and how you can get involved.</p>
+                </div>
+                <div class="message-area-container">
+                    <div class="assistant-messagearea">
+                        <div class="chat-window" id="chat-window">
+                            <div class="chat-bubble ai-bubble">
+                                Hello! I'm the FixMate assistant. Feel free to ask me anything about our startup.
+                            </div>
+                        </div>
+                        
+                        <div class="chat-questions">
+                            <h4 class="sample-title">Try These Questions:</h4>
+                            <div id="sample-questions" class="sample-questions">
+                                <button class="sample-question">Who Founded The Startup</button>
+                                <button class="sample-question">What Services Do FixMate Offer</button>
+                                <button class="sample-question">How To Contact FixMate</button>
+                                <button class="sample-question">What Problems Does FixMate solve</button>
+                                <button class="sample-question">Team Behind Fixmate</button>
+                                <button class="sample-question">What Are The Goals of FixMate</button>
+                            </div>
+                        </div>
+                        <div class="chat-input-container">
+                            <input type="text" id="chat-input" class="chat-input" placeholder="Ask anything about FixMate..." id="chatInput">
+                            <button id="send-btn" class="chat-send-btn">
+                                <img src="images/send-icon.svg" alt="Send">
+                            </button>
+                            <p id="error-message" class="error"></p>
+                        </div>
+                       
+                        <div class="powered-by-ai">
+                            <p class="powered-by">Powered by AI</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
         </section>
     
     
