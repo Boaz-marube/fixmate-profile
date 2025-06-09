@@ -318,6 +318,9 @@ body{
     background-color: #6f747ac3;
     padding: 100px 43px;
     gap: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .journey-content{
     display: flex;
@@ -328,16 +331,19 @@ body{
     height: 540px;
     padding: 30px;
     position: relative;
+    flex: 1 1 350px;
 }
 .journey-title{
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
     color: #F8FAFC;
+    margin-bottom: 20px;
 }
 .journey-description{
     font-size: 18px;
     color: #F8FAFC;
+    margin-bottom: 30px;
 }
 .journey-learn{
     width: fit-content;
@@ -346,7 +352,27 @@ body{
     display: flex;
     width: 300px;
     height: 600px;
+    flex: 1 1 300px;
 }
+.journey-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  @media (max-width: 480px) {
+    .journey-title {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  
+    .journey-description {
+      font-size: 15px;
+    }
+  
+    .journey-content {
+      padding: 20px;
+    }
+  }
 
 
 
