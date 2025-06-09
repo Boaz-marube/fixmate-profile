@@ -258,3 +258,56 @@ document.addEventListener('DOMContentLoaded', () => {
     // Focus the input on page load
     chatInput.focus();
 });
+
+
+
+// Visitor Counter//
+document.addEventListener('DOMContentLoaded', function() {
+    const today = new Date().toISOString().split('T')[0];
+    
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const daysToMonday = (dayOfWeek === 0 ? 6 : dayOfWeek - 1);
+    const monday = new Date(now);
+    monday.setDate(now.getDate() - daysToMonday);
+    const weekStart = monday.toISOString().split('T')[0];
+    
+    // Get stored values
+    const lastVisit = localStorage.getItem('lastVisitDate');
+    const lastWeekStart = localStorage.getItem('weekStartDate');
+    
+    // Update total visits 
+    let total = parseInt(localStorage.getItem('totalVisits')) || 0;
+    total++;
+    localStorage.setItem('totalVisits', total);
+    
+    // Update today's visits
+    let todayCount = 0;
+    if (lastVisit === today) {
+        todayCount = parseInt(localStorage.getItem('todayVisits')) || 0;
+    }
+    todayCount++;
+    localStorage.setItem('todayVisits', todayCount);
+    localStorage.setItem('lastVisitDate', today);
+    
+    // Update weekly visits
+    let weekCount = 0;
+    if (lastWeekStart === weekStart) {
+        weekCount = parseInt(localStorage.getItem('weeklyVisits')) || 0;
+    } else {
+        localStorage.setItem('weekStartDate', weekStart);
+    }
+    weekCount++;
+    localStorage.setItem('weeklyVisits', weekCount);
+    
+    // Display the counts
+    const statsElement = document.querySelector('.visitor-count-stats');
+    if (statsElement) {
+        statsElement.innerHTML = `
+            Today: ${todayCount}<br>
+            This Week: ${weekCount}<br>
+            Total: ${total}
+        `;
+    }
+});
+
