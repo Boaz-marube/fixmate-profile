@@ -94,10 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Convert *italic* to <em>
             text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
-            
-
-
-
 
             // Convert double line breaks to paragraph breaks
             text = text.replace(/\n\n+/g, '</p><p>');
@@ -112,12 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
             text = text.replace(/<p>\s*<\/p>/g, '');
             
             // Handle emojis and special characters properly
-            text = text.replace(/\s+/g, ' '); // Clean up multiple spaces
-            
-
-
-
-
+            // Clean up multiple spaces
+            text = text.replace(/\s+/g, ' '); 
+        
 
             return text;
         };
@@ -242,7 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // --- Event Listeners ---
 
     // Send button click
     sendBtn.addEventListener('click', handleSendMessage);

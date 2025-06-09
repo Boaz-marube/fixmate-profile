@@ -592,14 +592,9 @@ body{
 }
 
 
-
-
-
-
 .assistant-content{
-   
+    padding-bottom: 40px;
 }
-
 .assistant-section {
     background-color: #6B7280;
 }
@@ -637,6 +632,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: #6B7280;
+    margin-bottom: 30px;
 }
 .assistant-messagearea {
     background-color: #1e293b;
@@ -834,4 +830,137 @@ body{
     color: #f8fafc;
     text-align: center;
     margin: 5px;
+}
+
+
+
+/*Contact section*/
+.contact-section {
+    background-color: #f5f7fa;
+    height: 701px;
+    padding: 63px 89px;
+    display: flex;
+    gap: 22px;
+}
+
+
+.contact-title {
+    font-size: 64px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 96px;
+    color: #000000;
+    max-width: 420px;
+    
+}
+
+
+.contact-title .highlight {
+    color: #1c3d5a;
+}
+
+
+.contact-form {
+    background-color: #1e293b8c;
+    border-radius: 10px;
+    width: 644px;
+    height: 548px;
+    padding: 28px;
+}
+
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+
+.form-label {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 27px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.form-input {
+    background-color: #393e467f;
+    border: none;
+    border-radius: 16px;
+    width: 600px;
+    height: 59px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #161515;
+    outline: none;
+}
+
+
+.form-textarea {
+    background-color: #393e467f;
+    border: none;
+    border-radius: 16px;
+    width: 600px;
+    height: 100px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #ffffff;
+    resize: vertical;
+    outline: none;
+}
+
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #ffffff;
+}
+
+
+.btn-send-message {
+    background-color: #1e293b;
+    border: none;
+    border-radius: 23px;
+    width: 215px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #0000007f;
+    transition: all 0.3s ease;
+}
+
+
+.btn-send-message:hover {
+    transform: translateY(-1px);
+    color: #1E293B;
+    background-color: #F8FAFC;
+}
+
+
+.btn-send-message span {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 27px;
+    color: #eeeeee;
+}
+
+
+.btn-send-message img {
+    width: 24px;
+    height: 24px;
+   
+    padding-top: 10px;
+}
+
+.btn-send-message span:hover{
+    color: #1E293B;
 }
