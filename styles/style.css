@@ -377,7 +377,7 @@ body{
 
 
 /*Services stylings*/
-..services{
+.services{
     
     padding: 26px 30px;
     
@@ -582,7 +582,7 @@ body{
     width: 80px;
     height: 80px;
     margin-bottom: 25px;
-    filter: drop-shadow(0 2px 80x rgba(50, 160, 92, 0.3));
+    filter: drop-shadow(0 2px 8px rgba(50, 160, 92, 0.3));
 }
 .value h3 {
     font-family: 'Poppins', sans-serif;
@@ -663,7 +663,21 @@ body{
 .member h5{
     margin-bottom: 0;
 }
-
+@media screen and (max-width: 768px) {
+    .members {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 150px;
+        margin: 0 20px;
+    }
+    .team-title h1{
+        
+    }
+    .member {
+        margin: 0;
+    }
+}
 
 /*FAQ Sectiion*/
 .faqs {
@@ -746,6 +760,48 @@ body{
 .faq-item.active .faq-answer {
     display: block;
 }
+@media screen and (max-width: 768px) {
+    .faq-item {
+        width: 90%;
+        padding: 10px 18px;
+    }
+
+    .faqs {
+        padding: 30px 20px;
+    }
+
+    .faqs-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .faqs-subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 14px;
+    }
+
+    .faq-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+
+
 
 /*ChatBot Section*/
 .assistant-content{
