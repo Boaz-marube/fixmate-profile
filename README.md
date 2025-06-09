@@ -20,5 +20,8 @@ Think of it as Uber but for repairs.
 ## Tech Stack
 Frontend: HTML,CSS and JavaScript.
 
-## Working Link:
+## Working Links:
+**Website**
 https://boaz-marube.github.io/fixmate-profile/
+**Figma Design**
+https://www.figma.com/design/ylacm0DOp0GpGqcNb8dTUf/FixMate?node-id=0-1&t=fJdFx8TatoFx6YIZ-1
