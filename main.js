@@ -255,8 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Focus the input on page load
-    chatInput.focus();
+    
 });
 
 

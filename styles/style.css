@@ -150,6 +150,42 @@ body{
 .nav-item:hover{
     color: #000000;
 }
+
+.hamburger{
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .header-btns {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      padding: 20px;
+      cursor: pointer;
+      height: 40px;
+      width: 50px;
+    }
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: #1E293B;
+    width: 200px;
+    padding: 20px;
+    gap: 20px;
+    z-index: 1001;
+  }
+
 .header-btns{
     display: flex;
     flex-direction: row;
@@ -193,13 +229,12 @@ body{
     height: 690px;
     z-index: 1;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
 }
-.hero-background{
-   
-    height: 690px;
-    width: 1440px;
-    position: relative;
-}
+
 .overlay{
     position: absolute;
     top: 0px;
@@ -210,22 +245,71 @@ body{
     z-index: 2;
 }
 .hero-main{
-    top: 200px;
-    left: 50px;
+    
     z-index: 3;
-    position: relative;
+    text-align: left;
 }
 .hero-title{
     color: #F8FAFC;
+    font-size: 25px;
+    line-height: 1.2;
+    max-width: 600px;
 }
 .hero-btns{
     display: flex;
     z-index: 3;
     position: relative;
-    top: 410px;
-    left: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
     gap: 20px;
 }
+@media (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+  
+    .hero-main {
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+      max-width: 100%;
+    }
+  
+    .hero-btns {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .hero-logo {
+      max-width: 150px;
+      margin: 0 auto 20px;
+    }
+  
+    .overlay {
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 28px;
+    }
+  
+    .hero-btns {
+      gap: 12px;
+    }
+  
+    .hero-logo {
+      max-width: 130px;
+    }
+  }
+
 
 /* Journey Section*/
 .journey-section{
