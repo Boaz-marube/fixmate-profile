@@ -1238,7 +1238,53 @@ body{
 .btn-send-message span:hover{
     color: #1E293B;
 }
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        height: auto;
+    }
 
+    .contact-title {
+        font-size: 34px;
+        line-height: 50px;
+        max-width: 100%;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .contact-form {
+        width: 90%;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .form-input, .form-textarea {
+        width: 95%;
+        padding: 14px 18px;
+        font-size: 16px;
+    }
+
+    .form-textarea {
+        height: 100px;
+    }
+
+    .btn-send-message {
+        width: 40%;
+        justify-content: center;
+    }
+
+    .btn-send-message span {
+        font-size: 16px;
+    }
+
+    .btn-send-message img {
+        width: 22px;
+        height: 22px;
+        padding-top: 6px;
+    }
+}
 
  /* Footer */
  .footer {
@@ -1392,4 +1438,76 @@ body{
     font-weight: 400;
     line-height: 21px;
     color: #0b0b09;
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .visitor-count {
+        padding: 16px;
+    }
+
+    .visitor-count-title {
+        font-size: 18px;
+    }
+
+    .visitor-count-text {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footer-nav a {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .social-icons img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-divider {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-bottom a, .copyright {
+        font-size: 14px;
+    }
 }
