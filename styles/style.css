@@ -2,8 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    height: 1000px;
+    height: 10000px;
     background-color: #F8FAFC;
+    overflow-x: hidden;
 }
 
 .poppins-thin {
@@ -214,4 +215,45 @@ body{
     top: 410px;
     left: 50px;
     gap: 20px;
+}
+
+
+.journey-section{
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F7FA;
+    padding: 100px 43px;
+    gap: 70px;
+}
+.journey-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #495867;
+    border-radius: 10px;
+    width: 600px;
+    height: 540px;
+    padding: 30px;
+    position: relative;
+}
+.journey-title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #F8FAFC;
+}
+.journey-description{
+    font-size: 18px;
+    color: #F8FAFC;
+}
+.journey-learn{
+    width: fit-content;
+}
+.journey-image{
+    display: flex;
+    width: 300px;
+    height: 600px;
+}
+.about-img{
+    width: 300px;
+    height: 400px;
 }
