@@ -377,12 +377,12 @@ body{
 
 
 /*Services stylings*/
-.services{
-    height: 740px;
+..services{
+    
     padding: 26px 30px;
     
 }
-.service-title{
+.service-title h2{
     font-size: 40px;
     font-family: Poppins;
     line-height: 70px;
@@ -398,18 +398,19 @@ body{
     gap: 20px;
 }
 .service-card{
-    width: 370px;
-    height: 440px;
     border-radius: 10px;
-    padding: 0px 20px ;
+    padding: 20px;
     position: relative;
     background-color: #F97316;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+      
 }
 .service-card img{
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin-left: 10px;
 }
 
 .service-subtitle{
@@ -429,12 +430,47 @@ body{
 .fixtips{
     color: #F8FAFC;
 }
-
+@media (max-width: 992px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .service-title h2 {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+  
+  /* Phone view */
+  @media (max-width: 600px) {
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .services {
+      padding: 20px 16px;
+    }
+  
+    .service-title h2 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  
+    .service-card {
+      padding: 16px;
+    }
+  
+    .feature-method, .service-subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 .slider{
     display: flex;
     justify-content: center;
     padding-top: 20px;
 }
+
 
 
 /*Testimonial section*/
