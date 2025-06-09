@@ -124,8 +124,9 @@ body{
     background-color: #1E293B;
     justify-content: space-between;
     height: 90px;
-    width: auto;
-    
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 .fixmate-logo{
     padding: 10px;
@@ -179,9 +180,14 @@ body{
 }
 
 
-
+/*main section*/
+.main{
+    padding-top:90px;
+}
+    
 /*Hero section*/
 .hero{
+    margin-top: 0px;
     background-image: url(/images/hero-img.svg);
     background-size: cover;
     height: 690px;
@@ -225,7 +231,7 @@ body{
 .journey-section{
     display: flex;
     flex-direction: row;
-    background-color: #f5f7fa74;
+    background-color: #6f747ac3;
     padding: 100px 43px;
     gap: 70px;
 }
