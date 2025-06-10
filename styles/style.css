@@ -8,6 +8,11 @@ body{
     background-color: #F8FAFC;
     overflow-x: hidden;
 }
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*Poppins font stylings*/
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -413,6 +418,9 @@ body{
     gap: 10px;
       
 }
+.service-card h3{
+    margin: 0;
+}
 .service-card img{
     width: 100%;
     height: auto;
@@ -422,6 +430,7 @@ body{
 .service-subtitle{
     font-size: 14px;
     line-height: 14px;
+    margin: 0;
 }
 .feature-method{
     font-size: 14px;
@@ -459,12 +468,18 @@ body{
   @media (max-width: 600px) {
     .service-grid {
       grid-template-columns: 1fr;
+      width: 92%;
     }
   
     .services {
       padding: 20px 16px;
     }
-  
+    .service-card h3{
+        margin: 0;
+    }
+    .service-subtitle{
+        margin: 0;
+    }
     .service-title h2 {
       font-size: 28px;
       line-height: 40px;
@@ -1067,7 +1082,7 @@ body{
 
     .assistant-messagearea {
         width: 90%;
-        height: auto;
+        height: 20%;
         padding: 14px;
     }
 
@@ -1288,7 +1303,7 @@ body{
     }
 
     .btn-send-message {
-        width: 40%;
+        width: fit-content%;
         justify-content: center;
     }
 
