@@ -361,17 +361,22 @@ body{
     border-radius: 10px;
   }
   @media (max-width: 480px) {
+    .journey-section{
+       padding: 50px 40px;
+    }
     .journey-title {
       font-size: 26px;
       line-height: 36px;
     }
   
     .journey-description {
-      font-size: 15px;
+      font-size: 10px;
+      overflow-y: hidden;
     }
   
     .journey-content {
       padding: 20px;
+      height: fit-content;
     }
   }
 
@@ -431,6 +436,9 @@ body{
 .fixtips{
     color: #F8FAFC;
 }
+.fixlist{
+    display: none;
+}
 @media (max-width: 992px) {
     .service-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -443,6 +451,11 @@ body{
   }
   
   /* Phone view */
+  @media (max-width: 1000px) {
+    .fixlist{
+        display: block;
+    }
+  }
   @media (max-width: 600px) {
     .service-grid {
       grid-template-columns: 1fr;
@@ -464,6 +477,9 @@ body{
     .feature-method, .service-subtitle {
       font-size: 14px;
       line-height: 20px;
+    }
+    .fixlist{
+        display: block;
     }
   }
 .slider{
