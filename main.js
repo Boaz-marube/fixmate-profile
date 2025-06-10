@@ -1,3 +1,10 @@
+//toggle mobile nav //
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('mobile-nav');
+  }
+
+  
 //FAQ Accordion//
 document.addEventListener('DOMContentLoaded', function(){
     const faqItems = document.querySelectorAll('.faq-item');
