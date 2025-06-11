@@ -570,12 +570,12 @@ body{
 .testimonial-track{
     display: flex;
     width: 200%;
-    height: 100%;
+    height: 80%;
     animation: slide 12s infinite linear;
 }
 .testimonial-card{
     flex: 0 0 25%;
-    padding: 30px;
+    padding: 0px;
     margin: 0 15px;
     background-color: #1C3D5A;
     border: none;
@@ -600,7 +600,17 @@ body{
 .testimonial-track:hover{
     animation-play-state: paused;
 }
-
+@media screen and (max-width: 768px) {
+    .testimonial{
+        height: 400px;
+    }
+    testimonial-card{
+        font-size: 10px;
+    }
+    .testimonial-container{
+        height: 350px;
+    }
+}
 
 
 /*Values section*/
