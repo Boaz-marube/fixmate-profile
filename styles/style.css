@@ -395,17 +395,18 @@ section{
     height: auto;
     border-radius: 10px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     .journey-section{
        padding: 50px 40px;
     }
     .journey-title {
       font-size: 26px;
       line-height: 36px;
+      margin-bottom: 0;
     }
   
     .journey-description {
-      font-size: 6px;
+      font-size: 10px;
       overflow-y: hidden;
     }
   
@@ -416,7 +417,10 @@ section{
     .journey-image{
         padding: 0;
         margin: 0;
-        gap: px;
+        
+    }
+    .btn journey-learn{
+        width: 30px;
     }
   }
 
@@ -682,7 +686,14 @@ section{
     letter-spacing: 1px;
     margin: 0;
 }
-
+@media screen and (max-width: 768px) {
+    .values-title{
+        margin-bottom: 10px;
+    }
+    .value-elements{
+        padding-left: 20px;
+    }
+}
 
 /*Team section*/
 .team{
@@ -762,7 +773,8 @@ section{
         padding: 20px;
      }
     .team-title h1{
-        padding-left: 60px;
+        padding-left: 0px;
+        font-size: 40px;
     }
     .member {
         margin: 0;
@@ -855,7 +867,7 @@ section{
 @media screen and (max-width: 768px) {
     .faq-item {
         width: 90%;
-        padding: 10px 18px;
+        padding: px 18px;
     }
 
     .faqs {
@@ -1150,7 +1162,7 @@ section{
 
     .chat-window {
         width: 100%;
-        height: 400px;
+        height: 300px;
         border-radius: 10px;
         padding: 12px;
     }
@@ -1277,7 +1289,7 @@ section{
     padding: 16px 24px;
     font-size: 18px;
     font-family: Poppins;
-    font-weight: 700;
+    font-weight: 100;
     color: #ffffff;
     resize: vertical;
     outline: none;
@@ -1341,11 +1353,12 @@ section{
     }
 
     .contact-title {
-        font-size: 34px;
+        font-size: 30px;
         line-height: 50px;
         max-width: 100%;
         text-align: center;
         font-weight: 800;
+        margin-top: 0;
     }
 
     .contact-form {
@@ -1355,9 +1368,10 @@ section{
     }
 
     .form-input, .form-textarea {
-        width: 95%;
-        padding: 14px 18px;
-        font-size: 16px;
+        width: 100%;
+        padding: 10px 18px;
+        font-size: 14px;
+        font-weight: 100;
     }
 
     .form-textarea {
@@ -1365,7 +1379,7 @@ section{
     }
 
     .btn-send-message {
-        width: fit-content%;
+        width: fit-content;
         justify-content: center;
     }
 
@@ -1374,8 +1388,8 @@ section{
     }
 
     .btn-send-message img {
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         padding-top: 6px;
     }
 }
