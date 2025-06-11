@@ -258,7 +258,7 @@ section{
 /*Hero section*/
 .hero{
     margin-top: 0px;
-    background-image: url(/images/hero-img.svg);
+    background-image: url(/images/hero-background.jpg);
     background-size: cover;
     height: 690px;
     z-index: 1;
@@ -385,6 +385,7 @@ section{
 .journey-image{
     display: flex;
     max-width: 600px;
+    width: 50%;
     max-height: 600px;
     height: auto;
     
@@ -822,8 +823,8 @@ section{
     border-radius: 16px;
     padding: 5px 24px;
     margin-bottom: 16px;
-    max-width: 835px;
-    width: 700px;
+    max-width: 900px;
+    width: 90%;
     border: none;
 }
 
@@ -836,8 +837,8 @@ section{
 }
 
 .faq-question {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
     line-height: 18px;
     
 }
@@ -954,7 +955,7 @@ section{
     background-color: #1e293b;
     border: 1px solid #000000;
     border-radius: 13px;
-    width: 821px;
+    width: 70%;
     height: 600px;
     padding: 10px;
     display: flex;
@@ -965,7 +966,7 @@ section{
 .chat-window {
     background-color: #ced3d2;
     border-radius: 6px;
-    width: 790px;
+    width: 100%;
     height: 350px;
     padding: 14px;
     position: relative;
@@ -1022,7 +1023,7 @@ section{
 .typing-indicator span {
     height: 8px;
     width: 8px;
-    background-color: #9ca3af;
+    background-color: #141414;
     display: block;
     border-radius: 50%;
     animation: bounce 1.3s infinite;
@@ -1203,11 +1204,12 @@ section{
         flex-wrap: wrap;
         gap: 6px;
         justify-content: center;
+
     }
 
     .sample-question {
-        font-size: 13px;
-        padding: 6px 12px;
+        font-size: 10px;
+        padding: 3px 10px;
         margin: 4px 0;
     }
 }
@@ -1224,13 +1226,14 @@ section{
 }
 
 
-.contact-title {
-    font-size: 64px;
+.contact-title, .highlight {
+    font-size: clamp(24px, 10vw, 64px);
     font-family: Poppins;
     font-weight: 700;
-    line-height: 96px;
+    line-height: 1.2;
     color: #000000;
     max-width: 420px;
+    height: 80%;
     
 }
 
@@ -1243,7 +1246,8 @@ section{
 .contact-form {
     background-color: #1e293b8c;
     border-radius: 10px;
-    width: 644px;
+    max-width: 644px;
+    width: 80%;
     height: 548px;
     padding: 28px;
 }
@@ -1352,12 +1356,12 @@ section{
         height: auto;
     }
 
-    .contact-title {
+    .contact-title, .highlight {
         font-size: 30px;
-        line-height: 50px;
+        
         max-width: 100%;
         text-align: center;
-        font-weight: 800;
+        font-weight: 700;
         margin-top: 0;
     }
 
