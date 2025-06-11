@@ -1,9 +1,8 @@
 //toggle mobile nav //
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('mobile-nav');
+    navMenu.classList.toggle('open');
   }
-
   
 //FAQ Accordion//
 document.addEventListener('DOMContentLoaded', function(){

@@ -164,10 +164,29 @@ body{
 
 .hamburger{
     display: none;
+    margin-right: 40px;
+}
+.hamburger img{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    
 }
 @media (max-width: 768px) {
     .nav-menu {
       display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      right: 5px;
+      gap: 10px;
+      padding: 10px;
+      background-color: #1e293b;
+      width: 150px;
+      border-radius: 10px;
+    }
+    .nav-menu.open{
+        display: flex;
     }
      .btn-early-access, .btn-sign-up{
         display: none;
@@ -175,13 +194,13 @@ body{
     .header-btns {
       display: none;
     }
-  
     .hamburger {
       display: block;
       padding: 20px;
       cursor: pointer;
       height: 40px;
       width: 40px;
+      margin-left: 100px;
       
     }
   }
@@ -431,6 +450,7 @@ body{
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .service-subtitle{
@@ -441,6 +461,12 @@ body{
 .feature-method{
     font-size: 14px;
     line-height: 12px;
+}
+.feature-title{
+    margin: 0;
+}
+.feature-method{
+    margin: 0;
 }
 .fixprotect{
     background-color: #10B981;
@@ -455,6 +481,7 @@ body{
     display: none;
     background-color: #6366F1;
     color: #F8FAFC;
+    gap: 10px;
 }
 @media (max-width: 992px) {
     .service-grid {
@@ -712,10 +739,12 @@ body{
         margin: 0 20px;
     }
     .team-title h1{
-        
+        padding-left: 60px;
     }
     .member {
         margin: 0;
+        min-width: 200px;
+
     }
 }
 
@@ -1059,6 +1088,7 @@ body{
     font-size: small;
     margin-top: 5px;
     height: fit-content;
+
 }
 .powered-by-ai{
     height: fit-content;
