@@ -698,13 +698,13 @@ body{
     
 }
 .members{
-    margin: 0 50px;
+    margin: 0 0px;
     background-color: #ffffff;
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 25px;
-    padding: 30px;
+    padding: 0px;
     max-width: 900px;
     width: 100%;
 
@@ -722,6 +722,7 @@ body{
     align-items: center;
     transition: transform 0.3s ease ;
     color: #F8FAFC;
+
     
 }
 .member:hover{
@@ -741,19 +742,18 @@ body{
     margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-    .members {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 150px;
-        margin: 0 20px;
-    }
+     .members{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+     }
     .team-title h1{
         padding-left: 60px;
     }
     .member {
         margin: 0;
-        min-width: 200px;
+       
 
     }
 }
