@@ -1185,11 +1185,12 @@ section{
         width: 90%;
         padding: 10px;
         font-size: 14px;
+        height: 40px;
     }
 
     .chat-send-btn {
-        width: 50px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         justify-content: center;
     }
 
