@@ -299,7 +299,7 @@ section{
 }
 @media (max-width: 768px) {
     .hero {
-      height: auto;
+      min-height: 100vh;
       padding: 80px 20px;
       text-align: center;
     }
