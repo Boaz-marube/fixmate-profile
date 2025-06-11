@@ -10,6 +10,7 @@ body{
     background-color: #F8FAFC;
     overflow-x: hidden;
 }
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -17,7 +18,9 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
   }
-  
+section{
+    scroll-margin-top: 90px;
+}
 
 /*Poppins font stylings*/
 .poppins-thin {
@@ -251,7 +254,7 @@ body{
 .main{
     padding-top:90px;
 }
-    
+
 /*Hero section*/
 .hero{
     margin-top: 0px;
@@ -512,7 +515,7 @@ body{
   @media (max-width: 600px) {
     .service-grid {
       grid-template-columns: 1fr;
-      width: 92%;
+      width: 100%;
     }
   
     .services {
