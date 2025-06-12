@@ -23,6 +23,14 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
 });
+//alert message for button clicks
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(button => {
+  button.addEventListener("click", function() {
+    alert("This feature is under development!");
+  });
+});
 
 
 //AI Assistant//
