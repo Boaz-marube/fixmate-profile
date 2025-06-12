@@ -591,6 +591,7 @@ section{
     margin: 0 15px;
     background-color: #1C3D5A;
     border: none;
+    border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -614,13 +615,30 @@ section{
 }
 @media screen and (max-width: 768px) {
     .testimonial{
-        height: 400px;
+        height: auto;
     }
-    testimonial-card{
+    .testimonial-card{
         font-size: 10px;
+        scroll-snap-align: start;
+        padding: 10px;
+        border-radius: 10px;
     }
     .testimonial-container{
-        height: 350px;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 20px;
+        scroll-behavior: smooth;
+    }
+    .testimonial-track{
+        display: flex;
+        flex-wrap: nowrap;
+        width: aut;
+        animation: none;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        scrollbar-width: none;
+
     }
 }
 
@@ -1284,7 +1302,7 @@ section{
     font-size: 18px;
     font-family: Poppins;
     font-weight: 100;
-    color: #161515;
+    color: #F5F7FA;
     outline: none;
 }
 
