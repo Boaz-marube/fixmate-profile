@@ -271,8 +271,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 });
+//Handles the sent reply after contact form is filled.
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
 
-
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent actual submission
+  if (form.checkValidity()) {
+    status.style.display = 'block';
+    form.reset();
+    setTimeout(() => {
+      status.style.display = 'none';
+    }, 3000);
+  }
+});
 
 // Visitor Counter//
 document.addEventListener('DOMContentLoaded', function() {
