@@ -1283,7 +1283,7 @@ section{
     padding: 16px 24px;
     font-size: 18px;
     font-family: Poppins;
-    font-weight: 700;
+    font-weight: 100;
     color: #161515;
     outline: none;
 }
@@ -1332,8 +1332,12 @@ section{
     color: #1E293B;
     background-color: #F8FAFC;
 }
-
-
+.btn-send-message:hover span {
+    color: #1E293B;
+  }
+  .btn-send-message:hover img {
+    filter: invert(1);
+  }
 .btn-send-message span {
     font-size: 18px;
     font-family: Poppins;
@@ -1344,8 +1348,8 @@ section{
 
 
 .btn-send-message img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
    
     padding-top: 10px;
 }
