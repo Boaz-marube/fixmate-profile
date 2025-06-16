@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         -Gear discount at Divino Hardware.
         **Contact:** team@fixmate.co.ke | 020-765-4321 | GTC Towers, Kilimani
         **Goals 2026:** 5,000+ monthly bookings, 200+ female tradespeople, full M-Pesa integration.
-        **Team:** Founders Boaz Marube (ex-SafiriPay UX, survived 37 electrician calls) & Brian Mwangi (JKUAT dev, coded on Nokia during blackouts). Key staff: June (Operations, 4.9/5 ratings), Evelyne (CX, 3-min responses), Moses (Field Inspector), Raymond (Growth, #MyWorstRepairStory campaign).
+        **Team:** Founders Boaz Marube (ex-SafiriPay UX, survived 37 electrician calls) & Brian Mwangi (JKUAT dev, coded on Nokia during blackouts). Key staff: June (Operations, 4.9/5 ratings), Evelyne (CX, 3-min responses), Edmond (Field Inspector), Raymond (Growth, #MyWorstRepairStory campaign).
 
         Founded by Boaz Marube & Brian Mwangi, after Boaz experienced 37 failed electrician calls.Use Nairobi references and occasional emojis
 
@@ -145,18 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     };
 
-    /**
-     * Adds a streaming message bubble that can be updated in real-time
-     */
-    const addStreamingMessage = () => {
-        const bubble = document.createElement('div');
-        bubble.className = 'chat-bubble ai-bubble streaming-text';
-        bubble.id = 'streaming-bubble';
-        chatMessages.appendChild(bubble);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-        return bubble;
-    };
-
     const showTypingIndicator = (show) => {
         let indicator = document.getElementById('typing-indicator');
         if (show) {
@@ -201,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Use the correct Puter.js API call with conversation history
             const response = await puter.ai.chat(chatHistory, {
-                model: 'gpt-4o' // Using GPT-4o which is the default and reliable
+                model: 'gpt-4o' 
             });
 
             console.log('Puter.js response:', response);
@@ -271,6 +259,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 });
+
+
+
 //Handles the sent reply after contact form is filled.
 const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');

@@ -132,7 +132,7 @@ section{
   }
   
 /*Header Section*/
-.header{
+#header{
     display: flex;
     flex-direction: row;
     background-color: #1E293B;
@@ -432,7 +432,7 @@ section{
 
 
 /*Services stylings*/
-.services{
+#services{
     
     padding: 26px 30px;
     
